@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8044B6328577EE100A0E059 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8044B5D28577EE100A0E059 /* GameObject.cpp */; };
+		D8044B6428577EE100A0E059 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8044B5E28577EE100A0E059 /* TextureManager.cpp */; };
+		D8044B6528577EE100A0E059 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8044B6128577EE100A0E059 /* Game.cpp */; };
+		D8D4A1B0285774150059A0FA /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D4A1AF285774150059A0FA /* libSDL2-2.0.0.dylib */; };
+		D8D4A1B22857744F0059A0FA /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D4A1B12857744F0059A0FA /* libSDL2_image-2.0.0.dylib */; };
+		D8D4A1B7285779610059A0FA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8D4A1B6285779610059A0FA /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8D4A1A22857703A0059A0FA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D8044B5D28577EE100A0E059 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameObject.cpp; sourceTree = "<group>"; };
+		D8044B5E28577EE100A0E059 /* TextureManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TextureManager.cpp; sourceTree = "<group>"; };
+		D8044B5F28577EE100A0E059 /* TextureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextureManager.h; sourceTree = "<group>"; };
+		D8044B6028577EE100A0E059 /* Game.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		D8044B6128577EE100A0E059 /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		D8044B6228577EE100A0E059 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameObject.h; sourceTree = "<group>"; };
+		D8044B6728577FFE00A0E059 /* archer_run_left8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_left8@2x.png"; sourceTree = "<group>"; };
+		D8044B6828577FFE00A0E059 /* archer_run_right7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_right7@2x.png"; sourceTree = "<group>"; };
+		D8044B6928577FFE00A0E059 /* archer_idle_left8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_left8@2x.png"; sourceTree = "<group>"; };
+		D8044B6A28577FFE00A0E059 /* archer_run_left2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_left2@2x.png"; sourceTree = "<group>"; };
+		D8044B6B28577FFE00A0E059 /* archer_idle_right4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_right4@2x.png"; sourceTree = "<group>"; };
+		D8044B6C28577FFE00A0E059 /* archer_run_right6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_right6@2x.png"; sourceTree = "<group>"; };
+		D8044B6D28577FFE00A0E059 /* archer_idle_right1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_right1@2x.png"; sourceTree = "<group>"; };
+		D8044B6E28577FFE00A0E059 /* archer_idle_left1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_left1@2x.png"; sourceTree = "<group>"; };
+		D8044B6F28577FFE00A0E059 /* archer_run_right1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_right1@2x.png"; sourceTree = "<group>"; };
+		D8044B7028577FFE00A0E059 /* archer_idle_left5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_left5@2x.png"; sourceTree = "<group>"; };
+		D8044B7128577FFE00A0E059 /* archer_run_left6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_left6@2x.png"; sourceTree = "<group>"; };
+		D8044B7228577FFE00A0E059 /* archer_run_left7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_left7@2x.png"; sourceTree = "<group>"; };
+		D8044B7328577FFE00A0E059 /* archer_idle_right5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_right5@2x.png"; sourceTree = "<group>"; };
+		D8044B7428577FFE00A0E059 /* archer_idle_right7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_right7@2x.png"; sourceTree = "<group>"; };
+		D8044B7528577FFE00A0E059 /* archer_run_right5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_right5@2x.png"; sourceTree = "<group>"; };
+		D8044B7628577FFE00A0E059 /* archer_idle_right6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_right6@2x.png"; sourceTree = "<group>"; };
+		D8044B7728577FFE00A0E059 /* archer_run_left1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_left1@2x.png"; sourceTree = "<group>"; };
+		D8044B7828577FFE00A0E059 /* archer_idle_left6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_left6@2x.png"; sourceTree = "<group>"; };
+		D8044B7928577FFE00A0E059 /* archer_run_left5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_left5@2x.png"; sourceTree = "<group>"; };
+		D8044B7A28577FFE00A0E059 /* archer_idle_right8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_right8@2x.png"; sourceTree = "<group>"; };
+		D8044B7B28577FFE00A0E059 /* archer_run_right3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_right3@2x.png"; sourceTree = "<group>"; };
+		D8044B7C28577FFE00A0E059 /* archer_idle_right2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_right2@2x.png"; sourceTree = "<group>"; };
+		D8044B7D28577FFE00A0E059 /* archer_idle_right3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_right3@2x.png"; sourceTree = "<group>"; };
+		D8044B7E28577FFE00A0E059 /* archer_run_left3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_left3@2x.png"; sourceTree = "<group>"; };
+		D8044B7F28577FFE00A0E059 /* archer_idle_left7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_left7@2x.png"; sourceTree = "<group>"; };
+		D8044B8028577FFE00A0E059 /* archer_run_right8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_right8@2x.png"; sourceTree = "<group>"; };
+		D8044B8128577FFE00A0E059 /* archer_idle_left4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_left4@2x.png"; sourceTree = "<group>"; };
+		D8044B8228577FFE00A0E059 /* archer_idle_left3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_left3@2x.png"; sourceTree = "<group>"; };
+		D8044B8328577FFE00A0E059 /* archer_idle_left2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_idle_left2@2x.png"; sourceTree = "<group>"; };
+		D8044B8428577FFE00A0E059 /* archer_run_left4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_left4@2x.png"; sourceTree = "<group>"; };
+		D8044B8528577FFE00A0E059 /* archer_run_right2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_right2@2x.png"; sourceTree = "<group>"; };
+		D8044B8628577FFE00A0E059 /* archer_run_right4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "archer_run_right4@2x.png"; sourceTree = "<group>"; };
+		D8044B882857803300A0E059 /* walking1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walking1@2x.png"; sourceTree = "<group>"; };
+		D8044B892857803300A0E059 /* walking2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walking2@2x.png"; sourceTree = "<group>"; };
+		D8044B8A2857803300A0E059 /* walking3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walking3@2x.png"; sourceTree = "<group>"; };
+		D8044B8B2857803300A0E059 /* walking4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walking4@2x.png"; sourceTree = "<group>"; };
+		D8044B8C2857803300A0E059 /* louiseIdle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = louiseIdle.png; sourceTree = "<group>"; };
+		D8D4A1A42857703A0059A0FA /* SDLRolePlayGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDLRolePlayGame; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D4A1AF285774150059A0FA /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../../opt/homebrew/Cellar/sdl2/2.0.22/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		D8D4A1B12857744F0059A0FA /* libSDL2_image-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_image-2.0.0.dylib"; path = "../../../../../../opt/homebrew/Cellar/sdl2_image/2.0.5/lib/libSDL2_image-2.0.0.dylib"; sourceTree = "<group>"; };
+		D8D4A1B6285779610059A0FA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8D4A1A12857703A0059A0FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D4A1B22857744F0059A0FA /* libSDL2_image-2.0.0.dylib in Frameworks */,
+				D8D4A1B0285774150059A0FA /* libSDL2-2.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8044B6628577EEF00A0E059 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D8044B6128577EE100A0E059 /* Game.cpp */,
+				D8044B6028577EE100A0E059 /* Game.hpp */,
+				D8044B5D28577EE100A0E059 /* GameObject.cpp */,
+				D8044B6228577EE100A0E059 /* GameObject.h */,
+				D8044B5E28577EE100A0E059 /* TextureManager.cpp */,
+				D8044B5F28577EE100A0E059 /* TextureManager.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D8044B872857801100A0E059 /* ArcherSprites */ = {
+			isa = PBXGroup;
+			children = (
+				D8044B6E28577FFE00A0E059 /* archer_idle_left1@2x.png */,
+				D8044B8328577FFE00A0E059 /* archer_idle_left2@2x.png */,
+				D8044B8228577FFE00A0E059 /* archer_idle_left3@2x.png */,
+				D8044B8128577FFE00A0E059 /* archer_idle_left4@2x.png */,
+				D8044B7028577FFE00A0E059 /* archer_idle_left5@2x.png */,
+				D8044B7828577FFE00A0E059 /* archer_idle_left6@2x.png */,
+				D8044B7F28577FFE00A0E059 /* archer_idle_left7@2x.png */,
+				D8044B6928577FFE00A0E059 /* archer_idle_left8@2x.png */,
+				D8044B6D28577FFE00A0E059 /* archer_idle_right1@2x.png */,
+				D8044B7C28577FFE00A0E059 /* archer_idle_right2@2x.png */,
+				D8044B7D28577FFE00A0E059 /* archer_idle_right3@2x.png */,
+				D8044B6B28577FFE00A0E059 /* archer_idle_right4@2x.png */,
+				D8044B7328577FFE00A0E059 /* archer_idle_right5@2x.png */,
+				D8044B7628577FFE00A0E059 /* archer_idle_right6@2x.png */,
+				D8044B7428577FFE00A0E059 /* archer_idle_right7@2x.png */,
+				D8044B7A28577FFE00A0E059 /* archer_idle_right8@2x.png */,
+				D8044B7728577FFE00A0E059 /* archer_run_left1@2x.png */,
+				D8044B6A28577FFE00A0E059 /* archer_run_left2@2x.png */,
+				D8044B7E28577FFE00A0E059 /* archer_run_left3@2x.png */,
+				D8044B8428577FFE00A0E059 /* archer_run_left4@2x.png */,
+				D8044B7928577FFE00A0E059 /* archer_run_left5@2x.png */,
+				D8044B7128577FFE00A0E059 /* archer_run_left6@2x.png */,
+				D8044B7228577FFE00A0E059 /* archer_run_left7@2x.png */,
+				D8044B6728577FFE00A0E059 /* archer_run_left8@2x.png */,
+				D8044B6F28577FFE00A0E059 /* archer_run_right1@2x.png */,
+				D8044B8528577FFE00A0E059 /* archer_run_right2@2x.png */,
+				D8044B7B28577FFE00A0E059 /* archer_run_right3@2x.png */,
+				D8044B8628577FFE00A0E059 /* archer_run_right4@2x.png */,
+				D8044B7528577FFE00A0E059 /* archer_run_right5@2x.png */,
+				D8044B6C28577FFE00A0E059 /* archer_run_right6@2x.png */,
+				D8044B6828577FFE00A0E059 /* archer_run_right7@2x.png */,
+				D8044B8028577FFE00A0E059 /* archer_run_right8@2x.png */,
+			);
+			path = ArcherSprites;
+			sourceTree = "<group>";
+		};
+		D8044B8D2857804200A0E059 /* LouiseExSprites */ = {
+			isa = PBXGroup;
+			children = (
+				D8044B8C2857803300A0E059 /* louiseIdle.png */,
+				D8044B882857803300A0E059 /* walking1@2x.png */,
+				D8044B892857803300A0E059 /* walking2@2x.png */,
+				D8044B8A2857803300A0E059 /* walking3@2x.png */,
+				D8044B8B2857803300A0E059 /* walking4@2x.png */,
+			);
+			path = LouiseExSprites;
+			sourceTree = "<group>";
+		};
+		D8044B8E2857805900A0E059 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D8044B8D2857804200A0E059 /* LouiseExSprites */,
+				D8044B872857801100A0E059 /* ArcherSprites */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		D8D4A19B2857703A0059A0FA = {
+			isa = PBXGroup;
+			children = (
+				D8D4A1A62857703B0059A0FA /* SDLRolePlayGame */,
+				D8D4A1A52857703A0059A0FA /* Products */,
+				D8D4A1AE285774150059A0FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D8D4A1A52857703A0059A0FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8D4A1A42857703A0059A0FA /* SDLRolePlayGame */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8D4A1A62857703B0059A0FA /* SDLRolePlayGame */ = {
+			isa = PBXGroup;
+			children = (
+				D8044B6628577EEF00A0E059 /* include */,
+				D8D4A1B6285779610059A0FA /* main.cpp */,
+				D8044B8E2857805900A0E059 /* Assets */,
+			);
+			path = SDLRolePlayGame;
+			sourceTree = "<group>";
+		};
+		D8D4A1AE285774150059A0FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8D4A1B12857744F0059A0FA /* libSDL2_image-2.0.0.dylib */,
+				D8D4A1AF285774150059A0FA /* libSDL2-2.0.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8D4A1A32857703A0059A0FA /* SDLRolePlayGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D4A1AB2857703B0059A0FA /* Build configuration list for PBXNativeTarget "SDLRolePlayGame" */;
+			buildPhases = (
+				D8D4A1A02857703A0059A0FA /* Sources */,
+				D8D4A1A12857703A0059A0FA /* Frameworks */,
+				D8D4A1A22857703A0059A0FA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDLRolePlayGame;
+			productName = SDLRolePlayGame;
+			productReference = D8D4A1A42857703A0059A0FA /* SDLRolePlayGame */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8D4A19C2857703A0059A0FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					D8D4A1A32857703A0059A0FA = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D8D4A19F2857703A0059A0FA /* Build configuration list for PBXProject "SDLRolePlayGame" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8D4A19B2857703A0059A0FA;
+			productRefGroup = D8D4A1A52857703A0059A0FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8D4A1A32857703A0059A0FA /* SDLRolePlayGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8D4A1A02857703A0059A0FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8044B6328577EE100A0E059 /* GameObject.cpp in Sources */,
+				D8D4A1B7285779610059A0FA /* main.cpp in Sources */,
+				D8044B6428577EE100A0E059 /* TextureManager.cpp in Sources */,
+				D8044B6528577EE100A0E059 /* Game.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D8D4A1A92857703B0059A0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D8D4A1AA2857703B0059A0FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D8D4A1AC2857703B0059A0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/Cellar/sdl2/2.0.22/include/SDL2,
+					/opt/homebrew/Cellar/sdl2_image/2.0.5/include/SDL2,
+					"<Multiple",
+					"values>",
+					"/Users/joe/Documents/projects/c++_projects/SDLRolePlayGame/SDLRolePlayGame/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/sdl2/2.0.22/lib,
+					/opt/homebrew/Cellar/sdl2_image/2.0.5/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8D4A1AD2857703B0059A0FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/Cellar/sdl2/2.0.22/include/SDL2,
+					/opt/homebrew/Cellar/sdl2_image/2.0.5/include/SDL2,
+					"<Multiple",
+					"values>",
+					"/Users/joe/Documents/projects/c++_projects/SDLRolePlayGame/SDLRolePlayGame/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/sdl2/2.0.22/lib,
+					/opt/homebrew/Cellar/sdl2_image/2.0.5/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8D4A19F2857703A0059A0FA /* Build configuration list for PBXProject "SDLRolePlayGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D4A1A92857703B0059A0FA /* Debug */,
+				D8D4A1AA2857703B0059A0FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D4A1AB2857703B0059A0FA /* Build configuration list for PBXNativeTarget "SDLRolePlayGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D4A1AC2857703B0059A0FA /* Debug */,
+				D8D4A1AD2857703B0059A0FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8D4A19C2857703A0059A0FA /* Project object */;
+}
