@@ -24,7 +24,7 @@ public:
     void render();
     void clean();
     bool running() const { return isRunning;}
-
+    
     static SDL_Renderer *renderer;
     static fs::path exeParentPath;
 

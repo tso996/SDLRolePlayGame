@@ -10,6 +10,7 @@
 		D8044B6328577EE100A0E059 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8044B5D28577EE100A0E059 /* GameObject.cpp */; };
 		D8044B6428577EE100A0E059 /* TextureManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8044B5E28577EE100A0E059 /* TextureManager.cpp */; };
 		D8044B6528577EE100A0E059 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8044B6128577EE100A0E059 /* Game.cpp */; };
+		D82C382E2858CDAD00AE7324 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D82C382C2858CDAD00AE7324 /* Map.cpp */; };
 		D8D4A1B0285774150059A0FA /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D4A1AF285774150059A0FA /* libSDL2-2.0.0.dylib */; };
 		D8D4A1B22857744F0059A0FA /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D4A1B12857744F0059A0FA /* libSDL2_image-2.0.0.dylib */; };
 		D8D4A1B7285779610059A0FA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8D4A1B6285779610059A0FA /* main.cpp */; };
@@ -71,6 +72,8 @@
 		D8044B8A2857803300A0E059 /* walking3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walking3@2x.png"; sourceTree = "<group>"; };
 		D8044B8B2857803300A0E059 /* walking4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walking4@2x.png"; sourceTree = "<group>"; };
 		D8044B8C2857803300A0E059 /* louiseIdle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = louiseIdle.png; sourceTree = "<group>"; };
+		D82C382C2858CDAD00AE7324 /* Map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
+		D82C382D2858CDAD00AE7324 /* Map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Map.hpp; sourceTree = "<group>"; };
 		D8D4A1A42857703A0059A0FA /* one fighter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "one fighter"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D4A1AF285774150059A0FA /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../../opt/homebrew/Cellar/sdl2/2.0.22/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		D8D4A1B12857744F0059A0FA /* libSDL2_image-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_image-2.0.0.dylib"; path = "../../../../../../opt/homebrew/Cellar/sdl2_image/2.0.5/lib/libSDL2_image-2.0.0.dylib"; sourceTree = "<group>"; };
@@ -99,6 +102,8 @@
 				D8044B6228577EE100A0E059 /* GameObject.h */,
 				D8044B5E28577EE100A0E059 /* TextureManager.cpp */,
 				D8044B5F28577EE100A0E059 /* TextureManager.h */,
+				D82C382C2858CDAD00AE7324 /* Map.cpp */,
+				D82C382D2858CDAD00AE7324 /* Map.hpp */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8044B6328577EE100A0E059 /* GameObject.cpp in Sources */,
+				D82C382E2858CDAD00AE7324 /* Map.cpp in Sources */,
 				D8D4A1B7285779610059A0FA /* main.cpp in Sources */,
 				D8044B6428577EE100A0E059 /* TextureManager.cpp in Sources */,
 				D8044B6528577EE100A0E059 /* Game.cpp in Sources */,

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D8D4A1A32857703A0059A0FA"
-               BuildableName = "SDLRolePlayGame"
+               BuildableName = "one fighter"
                BlueprintName = "SDLRolePlayGame"
                ReferencedContainer = "container:SDLRolePlayGame.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8D4A1A32857703A0059A0FA"
-            BuildableName = "SDLRolePlayGame"
+            BuildableName = "one fighter"
             BlueprintName = "SDLRolePlayGame"
             ReferencedContainer = "container:SDLRolePlayGame.xcodeproj">
          </BuildableReference>
@@ -63,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D8D4A1A32857703A0059A0FA"
-            BuildableName = "SDLRolePlayGame"
+            BuildableName = "one fighter"
             BlueprintName = "SDLRolePlayGame"
             ReferencedContainer = "container:SDLRolePlayGame.xcodeproj">
          </BuildableReference>

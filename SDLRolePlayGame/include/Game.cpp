@@ -6,8 +6,8 @@
 GameObject* player1;
 GameObject* player2;
 fs::path Game::exeParentPath;
-
 SDL_Renderer* Game::renderer = nullptr;
+
 
 Game::Game(){
     //default constructor
@@ -70,8 +70,8 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
     std::cout<<"Fixed file path: "<<myFile<<std::endl;
     std::ifstream file(myFile.c_str());
     if (file) {
-        player1 = new GameObject("SDLRolePlayGame/Assets/ArcherSprites/archer_idle_right1@2x.png",renderer,0,0);
-        player2 = new GameObject("SDLRolePlayGame/Assets/ArcherSprites/archer_idle_right1@2x.png",renderer,100,0);
+        player1 = new GameObject("SDLRolePlayGame/Assets/ArcherSprites/archer_idle_right1@2x.png",0,0);
+        player2 = new GameObject("SDLRolePlayGame/Assets/ArcherSprites/archer_idle_right1@2x.png",100,0);
         std::cout<<"Texture found."<<std::endl;
     }else{
         std::cout<<"Texture not found."<<std::endl;

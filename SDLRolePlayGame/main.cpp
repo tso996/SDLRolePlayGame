@@ -13,10 +13,8 @@ int main(int argc, char* argv[]){
 
     game = new Game();
     (void) game->prepend_exe_path("", argv[0]);//casting the return type as void..
-    
-    
-
     game->init("One Fighter", SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,800,640,false);
+    
     while(game->running()){
         frameStart = SDL_GetTicks();
 
