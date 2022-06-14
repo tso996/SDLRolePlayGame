@@ -74,6 +74,9 @@
 		D8044B8C2857803300A0E059 /* louiseIdle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = louiseIdle.png; sourceTree = "<group>"; };
 		D82C382C2858CDAD00AE7324 /* Map.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Map.cpp; sourceTree = "<group>"; };
 		D82C382D2858CDAD00AE7324 /* Map.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Map.hpp; sourceTree = "<group>"; };
+		D82C38302858DA2B00AE7324 /* dirt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dirt.png; sourceTree = "<group>"; };
+		D82C38312858DA2B00AE7324 /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
+		D82C38322858DB5300AE7324 /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water.png; sourceTree = "<group>"; };
 		D8D4A1A42857703A0059A0FA /* one fighter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "one fighter"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D4A1AF285774150059A0FA /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../../opt/homebrew/Cellar/sdl2/2.0.22/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		D8D4A1B12857744F0059A0FA /* libSDL2_image-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_image-2.0.0.dylib"; path = "../../../../../../opt/homebrew/Cellar/sdl2_image/2.0.5/lib/libSDL2_image-2.0.0.dylib"; sourceTree = "<group>"; };
@@ -162,10 +165,21 @@
 		D8044B8E2857805900A0E059 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				D82C382F2858D9FD00AE7324 /* Map */,
 				D8044B8D2857804200A0E059 /* LouiseExSprites */,
 				D8044B872857801100A0E059 /* ArcherSprites */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		D82C382F2858D9FD00AE7324 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D82C38322858DB5300AE7324 /* water.png */,
+				D82C38312858DA2B00AE7324 /* grass.png */,
+				D82C38302858DA2B00AE7324 /* dirt.png */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		D8D4A19B2857703A0059A0FA = {

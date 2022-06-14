@@ -2,9 +2,11 @@
 #include <unistd.h>
 #include "TextureManager.h"
 #include "GameObject.h"
+#include "Map.hpp"
 
 GameObject* player1;
 GameObject* player2;
+Map* map;
 fs::path Game::exeParentPath;
 SDL_Renderer* Game::renderer = nullptr;
 
@@ -72,6 +74,7 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
     if (file) {
         player1 = new GameObject("SDLRolePlayGame/Assets/ArcherSprites/archer_idle_right1@2x.png",0,0);
         player2 = new GameObject("SDLRolePlayGame/Assets/ArcherSprites/archer_idle_right1@2x.png",100,0);
+        map = new Map();
         std::cout<<"Texture found."<<std::endl;
     }else{
         std::cout<<"Texture not found."<<std::endl;
@@ -105,6 +108,7 @@ void Game::render(){
     //whatever is rendered first is going to be behind recent renders
     //so render tilemaps first
     // SDL_RenderCopy(renderer, playerTexture, NULL, &dstR);//The 2 nulls are source rectangle and destination rectangle
+    map->drawMap();
     player1->render();
     player2->render();
 
