@@ -39,3 +39,6 @@ fastlane/sign&cert
 ._*
 *.bak
 *.exe
+
+Builds/
+one*fighter
