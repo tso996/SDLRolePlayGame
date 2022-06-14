@@ -4,6 +4,9 @@
 #include <iostream>
 #include "SDL_image.h"
 #include <fstream>
+#include <filesystem>
+namespace fs = std::filesystem;
+
 
 class Game {
 
@@ -12,7 +15,10 @@ public:
     ~Game();
 
     void init(const char* title, int xpos, int ypos, int width, int height, bool fullscreen);
+    
+    std::filesystem::path prepend_exe_path(const std::string& filename, const std::string& exe_path = "");
 
+    int hello(){return 5;}
     void handleEvents();
     void update();
     void render();
@@ -20,6 +26,7 @@ public:
     bool running() const { return isRunning;}
 
     static SDL_Renderer *renderer;
+    static fs::path exeParentPath;
 
 private:
     bool isRunning;

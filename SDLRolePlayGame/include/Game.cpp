@@ -5,6 +5,7 @@
 
 GameObject* player1;
 GameObject* player2;
+fs::path Game::exeParentPath;
 
 SDL_Renderer* Game::renderer = nullptr;
 
@@ -14,6 +15,12 @@ Game::Game(){
 
 Game::~Game(){
     //default destructor
+}
+
+fs::path Game::prepend_exe_path(const std::string& filename, const std::string& exe_path)
+{
+    Game::exeParentPath = fs::path(exe_path).parent_path();
+    return Game::exeParentPath / filename;
 }
 
 void Game::init(const char *title, int xpos, int ypos, int width, int height, bool fullscreen){
@@ -43,10 +50,22 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
     }
 
     char cwd[256];
+    
+#if defined DEBUG
+    std::cout<<"debug build"<<std::endl;
+#else
+    std::cout<<"release build"<<std::endl;
+    std::filesystem::current_path(Game::exeParentPath);
+#endif
+    
+    
     getcwd(cwd, 256);
     std::string cwd_str = std::string(cwd);
     std::cout<<"current directory: "<<cwd_str<<std::endl;
-    std::string myFile = "SDLRolePlayGame/Assets/ArcherSprites/archer_idle_right1@2x.png";//This gets found during run time. The #include paths are during compilation. That's why they need paths from the file level and this only needs from the project level. From the getcwd. However the executable is in a deeper folder so it's still not evident.
+    std::cout<<"exe path: "<<Game::exeParentPath<<std::endl;
+    
+    std::string myFile = cwd_str + "/SDLRolePlayGame/Assets/ArcherSprites/archer_idle_right1@2x.png";//This gets found during run time. The #include paths are during compilation. That's why they need paths from the file level and this only needs from the project level. From the getcwd. However the executable is in a deeper folder so it's still not evident.
+    std::cout<<"Fixed file path: "<<myFile<<std::endl;
     std::ifstream file(myFile.c_str());
     if (file) {
         player1 = new GameObject("SDLRolePlayGame/Assets/ArcherSprites/archer_idle_right1@2x.png",renderer,0,0);
