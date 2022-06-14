@@ -67,7 +67,7 @@ void Map::drawMap()
             type = map[row][column];
             dest.x = column*28;
             dest.y = row*28;
-            
+            //std::cout<<"draw command"<<std::endl;
             switch(type){
                 case 0:
                     TextureManager::draw(water, src, dest);
