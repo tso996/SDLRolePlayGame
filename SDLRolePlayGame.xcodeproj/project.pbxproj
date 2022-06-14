@@ -71,7 +71,7 @@
 		D8044B8A2857803300A0E059 /* walking3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walking3@2x.png"; sourceTree = "<group>"; };
 		D8044B8B2857803300A0E059 /* walking4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "walking4@2x.png"; sourceTree = "<group>"; };
 		D8044B8C2857803300A0E059 /* louiseIdle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = louiseIdle.png; sourceTree = "<group>"; };
-		D8D4A1A42857703A0059A0FA /* SDLRolePlayGame */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDLRolePlayGame; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D4A1A42857703A0059A0FA /* one fighter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "one fighter"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D4A1AF285774150059A0FA /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../../opt/homebrew/Cellar/sdl2/2.0.22/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		D8D4A1B12857744F0059A0FA /* libSDL2_image-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_image-2.0.0.dylib"; path = "../../../../../../opt/homebrew/Cellar/sdl2_image/2.0.5/lib/libSDL2_image-2.0.0.dylib"; sourceTree = "<group>"; };
 		D8D4A1B6285779610059A0FA /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 		D8D4A1A52857703A0059A0FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8D4A1A42857703A0059A0FA /* SDLRolePlayGame */,
+				D8D4A1A42857703A0059A0FA /* one fighter */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 			);
 			name = SDLRolePlayGame;
 			productName = SDLRolePlayGame;
-			productReference = D8D4A1A42857703A0059A0FA /* SDLRolePlayGame */;
+			productReference = D8D4A1A42857703A0059A0FA /* one fighter */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -316,10 +316,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "one fighter";
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "one fighter";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -368,10 +370,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "one fighter";
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "one fighter";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -387,12 +391,13 @@
 					"values>",
 					"/Users/joe/Documents/projects/c++_projects/SDLRolePlayGame/SDLRolePlayGame/include",
 				);
+				INFOPLIST_KEY_CFBundleDisplayName = "one fighter";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/sdl2/2.0.22/lib,
 					/opt/homebrew/Cellar/sdl2_image/2.0.5/lib,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "one fighter";
 			};
 			name = Debug;
 		};
@@ -407,12 +412,13 @@
 					"values>",
 					"/Users/joe/Documents/projects/c++_projects/SDLRolePlayGame/SDLRolePlayGame/include",
 				);
+				INFOPLIST_KEY_CFBundleDisplayName = "one fighter";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/opt/homebrew/Cellar/sdl2/2.0.22/lib,
 					/opt/homebrew/Cellar/sdl2_image/2.0.5/lib,
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "one fighter";
 			};
 			name = Release;
 		};

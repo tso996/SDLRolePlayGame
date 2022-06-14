@@ -55,14 +55,16 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
     std::cout<<"debug build"<<std::endl;
 #else
     std::cout<<"release build"<<std::endl;
-    std::filesystem::current_path(Game::exeParentPath);
+    std::filesystem::current_path(Game::exeParentPath);//if it is release build, then we change the current working directory to the parent path of where the executable file is located
+    std::cout<<"the current working directory has been changed to the executable file path.."<<std::endl;
 #endif
-    
     
     getcwd(cwd, 256);
     std::string cwd_str = std::string(cwd);
     std::cout<<"current directory: "<<cwd_str<<std::endl;
-    std::cout<<"exe path: "<<Game::exeParentPath<<std::endl;
+
+    
+    std::cout<<"exe parent path: "<<Game::exeParentPath<<std::endl;
     
     std::string myFile = cwd_str + "/SDLRolePlayGame/Assets/ArcherSprites/archer_idle_right1@2x.png";//This gets found during run time. The #include paths are during compilation. That's why they need paths from the file level and this only needs from the project level. From the getcwd. However the executable is in a deeper folder so it's still not evident.
     std::cout<<"Fixed file path: "<<myFile<<std::endl;
@@ -70,12 +72,7 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height, bo
     if (file) {
         player1 = new GameObject("SDLRolePlayGame/Assets/ArcherSprites/archer_idle_right1@2x.png",renderer,0,0);
         player2 = new GameObject("SDLRolePlayGame/Assets/ArcherSprites/archer_idle_right1@2x.png",renderer,100,0);
-
-        //  playerTexture = TextureManager::LoadTexture("bin/Archer/archer_idle_right1@2x.png", renderer);
-        //  SDL_Surface* tempSurface = IMG_Load("bin/Archer/archer_idle_right1@2x.png");
-        //  playerTexture = SDL_CreateTextureFromSurface(renderer, tempSurface);
-        //  SDL_FreeSurface(tempSurface);//clearing surface..probably a destructor or delete
-         std::cout<<"Texture found."<<std::endl;
+        std::cout<<"Texture found."<<std::endl;
     }else{
         std::cout<<"Texture not found."<<std::endl;
     }
